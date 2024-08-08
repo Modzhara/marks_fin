@@ -74,8 +74,7 @@ h6 {
   font-size: inherit
 }
 body {
-  background: linear-gradient(270deg,rgba(150,150,150,.9) 0,rgba(205,205,205,.7) 50.21%,rgba(150,150,150,.9)),url(../img/bg.svg) 0 0/auto auto;
-  background-color: rgba(205,204,204,.6)
+  background-color: #cdcccc
 }
 .lock body {
   overflow: hidden;
@@ -552,6 +551,7 @@ body::after {
   margin-top: 1.875rem
 }
 .top-header {
+  border-radius: .625rem .625rem 0 0;
   background-color: #252525
 }
 .top-header__add-cnt {
@@ -566,6 +566,7 @@ body::after {
   justify-self: end
 }
 .bottom-header {
+  border-radius: 0 0 .625rem .625rem;
   background-color: #1f1f1f
 }
 .footer {
@@ -631,6 +632,7 @@ body::after {
   transition: fill .3s
 }
 .hero-page__wrapper {
+  border-radius: .625rem;
   margin-top: 1.875rem;
   position: relative
 }
@@ -2125,7 +2127,7 @@ body .privacy-policy-page {
     font-size: .875rem
   }
   .about-page__title {
-    font-size: 1.6875rem
+    font-size: 1.6875rem!important
   }
   .workflow-page__image {
     aspect-ratio: 328/254
@@ -2234,6 +2236,9 @@ body .privacy-policy-page {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
+  .top-header {
+    border-radius: .625rem
+  }
   .top-header__add-cnt {
     grid-template-columns: 2fr 1fr 1fr
   }
@@ -2252,6 +2257,11 @@ body .privacy-policy-page {
 @media (max-width:26.25em) {
   .hero-page__title {
     max-width: 18.125rem
+  }
+}
+@media (max-width:26.5625em) {
+  .about-page__image img {
+    max-width: 100%
   }
 }
 @media (max-width:22.5em) {
